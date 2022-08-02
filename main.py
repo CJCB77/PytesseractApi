@@ -11,6 +11,8 @@ from dotenv import load_dotenv
 from os import getenv,remove
 import pytesseract
 
+pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+
 load_dotenv()
 
 app = FastAPI()
